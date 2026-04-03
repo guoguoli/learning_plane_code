@@ -395,7 +395,7 @@ def create_chengdu_education_dataset():
                         df['睡眠质量评分'] * 0.2)
     
     print("   衍生特征创建完成，新增字段:")
-    new_features = ['总分', '平均分', '优势学科', '文科得分', '理科得分', 
+    new_features = ['总分', '平均分', '文科得分', '理科得分', 
                    '文理倾向指数', '学习效率指数', '综合素质评分']
     for feat in new_features:
         print(f"     - {feat}: {df[feat].describe()['mean']:.2f} ± {df[feat].describe()['std']:.2f}")
